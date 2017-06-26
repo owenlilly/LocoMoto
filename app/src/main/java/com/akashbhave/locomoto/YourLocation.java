@@ -226,7 +226,7 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
                             // Make a notification when the driver has arrived
                             final NotificationCompat.Builder nBuilder =
                                     new NotificationCompat.Builder(getApplicationContext())
-                                            .setSmallIcon(R.drawable.location1)
+                                            .setSmallIcon(android.R.drawable.ic_menu_mylocation)
                                             .setContentTitle("Your Driver is Here!")
                                             .setContentText("Your driver has arrived at your location.")
                                             .setVibrate(new long[]{0, 1000, 500, 1000, 500})
@@ -442,8 +442,8 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
 
         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
         provider = locationManager.getBestProvider(new Criteria(), false);
-        locIcon1 = BitmapDescriptorFactory.fromResource(R.drawable.location1);
-        locIcon3 = BitmapDescriptorFactory.fromResource(R.drawable.location3);
+        locIcon1 = BitmapDescriptorFactory.fromResource(android.R.drawable.ic_menu_mylocation);
+        locIcon3 = BitmapDescriptorFactory.fromResource(android.R.drawable.ic_menu_mylocation);
 
         // All location services
         locationManager.requestLocationUpdates(provider, 400, 1, this);

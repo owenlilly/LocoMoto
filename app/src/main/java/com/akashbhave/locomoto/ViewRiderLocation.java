@@ -151,8 +151,8 @@ public class ViewRiderLocation extends FragmentActivity implements OnMapReadyCal
                 ArrayList<Marker> markers = new ArrayList<Marker>();
 
                 // Custom icons for markers
-                BitmapDescriptor locIcon1 = BitmapDescriptorFactory.fromResource(R.drawable.location1);
-                BitmapDescriptor locIcon2 = BitmapDescriptorFactory.fromResource(R.drawable.location2);
+                BitmapDescriptor locIcon1 = BitmapDescriptorFactory.fromResource(android.R.drawable.ic_menu_mylocation);
+                BitmapDescriptor locIcon2 = BitmapDescriptorFactory.fromResource(android.R.drawable.ic_menu_mylocation);
                 markers.add(mMap.addMarker(new MarkerOptions().position(new LatLng(riderLat, riderLng)).title("Your Location").icon(locIcon1)));
                 markers.add(mMap.addMarker(new MarkerOptions().position(new LatLng(driverLat, driverLng)).title("Rider's Location").icon(locIcon2)));
 
